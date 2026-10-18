@@ -20,8 +20,6 @@ Windows Deployment Services (WDS) enables network-based Windows deployment using
 
 > **Important:** WDS is deprecated starting with the Windows Server release after Windows Server 2025. Windows 11 deployment workflows that use the original Windows installation `boot.wim` and WDS mode are blocked. WDS can still PXE-boot clients using supported custom boot images.
 
-Reference: [Microsoft — WDS Boot Image Support](https://learn.microsoft.com/en-us/windows/deployment/wds-boot-support)
-
 ---
 
 ## 02. Prerequisites and Deployment Environment
@@ -170,7 +168,6 @@ Windows ADK and the WinPE Add-on provide tools for creating and servicing deploy
 3. Download and install the matching Windows PE Add-on.
 4. Use the ADK version appropriate for the target operating system and deployment solution.
 
-Reference: [Download and Install the Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install)
 
 ### Create a Working Directory
 
@@ -355,8 +352,6 @@ Traditional end-to-end deployment using the Windows 11 installation `boot.wim` i
 
 For Windows 11, choose a supported deployment solution or a validated custom WinPE workflow. Microsoft Configuration Manager is one alternative for managed deployments.
 
-Reference: [Microsoft — WDS Boot Image Support](https://learn.microsoft.com/en-us/windows/deployment/wds-boot-support)
-
 ---
 
 ## 11. Create and Configure an Answer File
@@ -398,8 +393,6 @@ The WDS client answer file and the Windows Setup answer file serve different sta
 - Avoid embedding reusable credentials in answer files.
 - Restrict access to deployment shares and unattended configuration files.
 - Validate answer-file settings against the target Windows version.
-
-Reference: [Windows SIM Technical Reference](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
 
 ---
 
